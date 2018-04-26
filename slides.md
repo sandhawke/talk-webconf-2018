@@ -50,7 +50,7 @@ sandro@w3.org<br />
 * Not too hard as client-server / DBMS
 * Extremely common today
 
-## At odds with the Web's decentralization
+## At odds with Web's decentralization
 
 Social features on www.site1.example
 
@@ -58,18 +58,24 @@ Social features on www.site1.example
 
 social features on www.site2.example
 
-## Decentralized Social
+**So the Web ends up <mark>centralized</mark>**
 
-* <mark>Very rare:</mark>
-    * SMTP email
-    * IRC
-    * XMPP
-
-## But not:
+## Centralized Social:
 
 airbnb craigslist doodle ebay eventbrite facebook flickr imdb instagram kickstarter linkin lyft match meetup pinterest quora reddit snapchat tinder tumblr twitter uber webex whatsapp yelp youtube
 
-Not even: wikipedia, github, easychair
+Even: wikipedia, github, easychair !
+
+## Decentralized Social
+
+Rare!
+
+* SMTP email
+* IRC
+* XMPP
+
+plus many that never caught on
+
 
 ## Why?
 
@@ -126,7 +132,7 @@ Community Group
 * <mark>OpenSocial</mark>
     * syndicate XML ActivityStreams
 * <mark>Solid</mark>
-    * RDF Linked Data, Personal data stores, WebIDs
+    * RDF Linked Data on Personal data stores
 
 ## <span style="text-shadow: 1px 1px 30px white;">Oct 2014</span> {data-background-image="wg/2014-10.jpg"}
 
@@ -153,19 +159,20 @@ Community Group
     * Webmention - standardized back-links
     * Micropub - API for posting to your site
 * <mark>OpenSocial</mark> style
-    * ActivityStreams - JSON-LD style + vocab for "social" things
-    * ActivityPub - vocab for controlling flow of streams
+    * ActivityStreams - JSON-LD, Actors + vocab for "social"
+    * ActivityPub - vocab for managing streams
 * <mark>Solid</mark> style
     * Linked Data Notifications (LDN)
 
-... other parts didn't get to REC
+<p style="text-align: left">(some other parts didn't get to REC)</p>
+
 </div>
 
 ## <span style="text-shadow: 1px 1px 10px white;">Multiple Standards?</span> {data-background-image="lyon/2.jpg"}
 
 ## <span style="text-shadow: 1px 1px 10px white;">Human Scale</span> {data-background-image="lyon/3.jpg"}
 
-## <span style="text-shadow: 1px 1px 10px white;">Bigger + Wheels</span> {data-background-image="lyon/4.jpg"}
+## <span style="text-shadow: 1px 1px 10px white;">More Machine-Friendly</span> {data-background-image="lyon/4.jpg"}
 
 ## Small Problem
 
@@ -179,10 +186,12 @@ Right before we finalized ActivityPub...
 
 <div style="font-size: 10px; float:right">From <a href="https://dashboards.mnm.social/d/000000012/user-growth?panelId=1&fullscreen&orgId=1&from=1492093949517&to=1524413261931">mnm.social</a></div>
 
-## Align the protocols
+## Using older protocol
 
-* Delay the WG 6 months
-* Mastodon switched to ActivityPub (for server-to-server)
+* We Decided to delay the WG 6 months
+* Added needed features to ActivityPub
+* Mastodon adopted ActivityPub (for server-to-server)
+* Win!
 
 ## Other adoption
 
@@ -203,7 +212,7 @@ GNU Social, pump.io, Pleroma, Peer Tube, FunkWhale, Nextcloud, Friendica, Social
     * Independently run (or commercially)
     * Try <https://w3c.social>
 * Top-notch open-source development lead (Eugen Rochko)
-    * Patreon for some expenses
+    * Supported via Patreon and Liberapay
 
 </div>
 
@@ -263,6 +272,8 @@ more connections needed
 It's a good time for first-mover advantage
 
 Like early days on a platform, maybe
+
+For product or <mark>personality</mark>
 
 
 ## Monetization
