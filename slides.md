@@ -22,9 +22,9 @@ sandro@w3.org<br />
 
 ## Credits
 
-I'm reporting on the work of many people (I arrived relatively late)
-
-Chris Webber and Evan Prodromou helped with content for slides
+* I'm reporting on the work of many people
+* (I arrived relatively late)
+* some talk ideas: Chris Webber, Evan Prodromou
 
 ## Overview
 
