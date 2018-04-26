@@ -206,13 +206,13 @@ GNU Social, pump.io, Pleroma, Peer Tube, FunkWhale, Nextcloud, Friendica, Social
 <div style="font-size: 70%">
 
 * 2500 Instances (Servers)
-    * Whole communities signed up at once, on an instance
+    * <mark>Whole communities</mark> signed up at once, on an instance
     * Local moderation rules
     * Home for folks not comfortable (or allowed) on Twitter
     * Independently run (or commercially)
     * Try <https://w3c.social>
 * Top-notch open-source development lead (Eugen Rochko)
-    * Supported via Patreon and Liberapay
+    * <mark>Community supported</mark> via Patreon and Liberapay
 
 </div>
 
