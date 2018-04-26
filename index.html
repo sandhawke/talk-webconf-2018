@@ -1,56 +1,408 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./reveal.js-3.6.0/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="./reveal.js-3.6.0/css/theme/dk-light.min.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js-3.6.0/css/print/pdf.css' : './reveal.js-3.6.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="./reveal.js-3.6.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-		<title>Social Web @ TheWebConf 2018</title>
 
-    <link rel="stylesheet" href="darekkay/reveal.min.css">
-    <link rel="stylesheet" href="darekkay/dk-light.min.css" id="theme">
-    <link rel="stylesheet" href="darekkay/a11y.css">
+<section id="innovation-on-the-social-web" class="slide level2" data-background-image="lyon/1-light.jpg">
+<h2>Innovation on the <br/>Social Web</h2>
+<div style="font-size: 70%">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="reveal.js-3.6.0/lib/css/zenburn.css">
+<p>Sandro Hawke, W3C <br/> Slides at <a href="http://hawke.org/2018/webconf" class="uri">http://hawke.org/2018/webconf</a></p>
+<hr />
+<div style="float:right; text-align: right;">
+<p>sandro@w3.org<br /> <a href="https://w3c.social/@sandro"><span class="citation" data-cites="sandro">@sandro</span><span class="citation" data-cites="w3c.social">@w3c.social</span></a></p>
+</div>
+<div style="float:left; text-align:left">
+<p>27 Apr 2018<br /> <a href="https://www2018.thewebconf.org/program/w3c-track/">The Web Conference</a></p>
+</div>
+</div>
+</section>
+<section id="credits" class="slide level2">
+<h2>Credits</h2>
+<p>I'm reporting on the work of many people (I arrived relatively late)</p>
+<p>Chris Webber and Evan Prodromou helped with content for slides</p>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<ol type="1">
+<li>&quot;Social Web&quot;?</li>
+<li>W3C gets to work</li>
+<li>The helpful elephant in the room</li>
+<li>Innovation land</li>
+</ol>
+</section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<ul>
+<li>The Social Web is usable today</li>
+<li>It's a great place to build new things</li>
+</ul>
+</section>
+<section id="part-1-social-web" class="slide level2">
+<h2>Part 1: Social Web?</h2>
+</section>
+<section id="section" class="slide level2" data-background-image="economist-2008.png">
+<h2><span style="text-shadow: 1px 1px 10px white;">2008</span></h2>
+</section>
+<section id="section-1" class="slide level2" data-background-image="Platovterm1981.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">1981</span></h2>
+</section>
+<section id="social-multi-user" class="slide level2">
+<h2>Social = Multi-User</h2>
+<ul>
+<li>Value comes from other users</li>
+<li>Not too hard as client-server / DBMS</li>
+<li>Extremely common today</li>
+</ul>
+</section>
+<section id="at-odds-with-the-webs-decentralization" class="slide level2">
+<h2>At odds with the Web's decentralization</h2>
+<p>Social features on www.site1.example</p>
+<p><mark>disconnected from</mark></p>
+<p>social features on www.site2.example</p>
+</section>
+<section id="decentralized-social" class="slide level2">
+<h2>Decentralized Social</h2>
+<ul>
+<li><mark>Very rare:</mark>
+<ul>
+<li>SMTP email</li>
+<li>IRC</li>
+<li>XMPP</li>
+</ul></li>
+</ul>
+</section>
+<section id="but-not" class="slide level2">
+<h2>But not:</h2>
+<p>airbnb craigslist doodle ebay eventbrite facebook flickr imdb instagram kickstarter linkin lyft match meetup pinterest quora reddit snapchat tinder tumblr twitter uber webex whatsapp yelp youtube</p>
+<p>Not even: wikipedia, github, easychair</p>
+</section>
+<section id="why" class="slide level2">
+<h2>Why?</h2>
+<ol type="1">
+<li>requires agreement
+<ul>
+<li>from everyone building the software</li>
+<li>for nearly every change</li>
+</ul></li>
+</ol>
+</section>
+<section id="why-1" class="slide level2">
+<h2>Why?</h2>
+<ol start="2" type="1">
+<li>only modest financial rewards</li>
+</ol>
+</section>
+<section id="why-2" class="slide level2">
+<h2>Why?</h2>
+<ol start="3" type="1">
+<li>bootstrapping is <em>very</em> hard
+<ul>
+<li>value is other users</li>
+<li>each new user sees a ghost town</li>
+</ul></li>
+</ol>
+</section>
+<section id="still-want-it" class="slide level2">
+<h2>Still want it!</h2>
+<ul>
+<li>Freedom to innovate</li>
+<li>Autonomy for users</li>
+<li>Security options</li>
+<li>Privacy options</li>
+<li>...</li>
+</ul>
+</section>
+<section id="maybe..." class="slide level2">
+<h2>Maybe...?</h2>
+<ul>
+<li>Blogging is decentralized + social</li>
+</ul>
+</section>
+<section id="add-to-blogging" class="slide level2">
+<h2>Add to blogging?</h2>
+<p>(one perspective)</p>
+<ul>
+<li>data-like blog posts to allow nicer UI</li>
+<li>immediate notification (pub/sub)</li>
+<li>like &amp; comment via your own site</li>
+<li>access control (friends-only posts)</li>
+<li>other applications beyond newsfeed</li>
+</ul>
+</section>
+<section id="part-2-w3c" class="slide level2" data-background-image="lyon/1-light.jpg">
+<h2>Part 2: W3C</h2>
+<p>Federated Social Web Summit (2010)</p>
+<p>Incubator Group</p>
+<p>Community Group</p>
+<p><mark>Working Group</mark> (July 2014 - Feb 2018)</p>
+</section>
+<section id="perspectives-in-wg" class="slide level2">
+<h2>Perspectives in WG</h2>
+<ul>
+<li><mark>IndieWebCamp</mark>
+<ul>
+<li>blogs with metadata in microformats</li>
+</ul></li>
+<li><mark>OpenSocial</mark>
+<ul>
+<li>syndicate XML ActivityStreams</li>
+</ul></li>
+<li><mark>Solid</mark>
+<ul>
+<li>RDF Linked Data, Personal data stores, WebIDs</li>
+</ul></li>
+</ul>
+</section>
+<section id="oct-2014" class="slide level2" data-background-image="wg/2014-10.jpg">
+<h2><span style="text-shadow: 1px 1px 30px white;">Oct 2014</span></h2>
+</section>
+<section id="mar-2015" class="slide level2" data-background-image="wg/2015-03.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Mar 2015</span></h2>
+</section>
+<section id="may-2015" class="slide level2" data-background-image="wg/2015-05.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">May 2015</span></h2>
+</section>
+<section id="dec-2015" class="slide level2" data-background-image="wg/2015-12.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Dec 2015</span></h2>
+</section>
+<section id="mar-2016" class="slide level2" data-background-image="wg/2016-03.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Mar 2016</span></h2>
+</section>
+<section id="jun-2016" class="slide level2" data-background-image="wg/2016-06.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Jun 2016</span></h2>
+</section>
+<section id="sep-2016" class="slide level2" data-background-image="wg/2016-09.gif">
+<h2><span style="text-shadow: 1px 1px 10px white;">Sep 2016</span></h2>
+</section>
+<section id="nov-2016" class="slide level2" data-background-image="wg/2016-11.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Nov 2016</span></h2>
+</section>
+<section id="w3c-recommendations" class="slide level2">
+<h2>W3C Recommendations</h2>
+<div style="font-size: 70%">
+<ul>
+<li><mark>IndieWebCamp</mark> style
+<ul>
+<li>WebSub - pub/sub for the web</li>
+<li>Webmention - standardized back-links</li>
+<li>Micropub - API for posting to your site</li>
+</ul></li>
+<li><mark>OpenSocial</mark> style
+<ul>
+<li>ActivityStreams - JSON-LD style + vocab for &quot;social&quot; things</li>
+<li>ActivityPub - vocab for controlling flow of streams</li>
+</ul></li>
+<li><mark>Solid</mark> style
+<ul>
+<li>Linked Data Notifications (LDN)</li>
+</ul></li>
+</ul>
+<p>... other parts didn't get to REC</p>
+</div>
+</section>
+<section id="multiple-standards" class="slide level2" data-background-image="lyon/2.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Multiple Standards?</span></h2>
+</section>
+<section id="human-scale" class="slide level2" data-background-image="lyon/3.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Human Scale</span></h2>
+</section>
+<section id="bigger-wheels" class="slide level2" data-background-image="lyon/4.jpg">
+<h2><span style="text-shadow: 1px 1px 10px white;">Bigger + Wheels</span></h2>
+</section>
+<section id="small-problem" class="slide level2">
+<h2>Small Problem</h2>
+<p>Or opportunity</p>
+<p>Right before we finalized ActivityPub...</p>
+</section>
+<section id="part-3-mastodon" class="slide level2" data-background-image="mastodon-wide.png">
+<h2><span style="text-shadow: 1px 1px 10px white;">Part 3: Mastodon</span></h2>
+</section>
+<section id="adoption-curve-1yr-ago" class="slide level2" data-background-image="mastodon-growth-2017.png">
+<h2><span style="text-shadow: 1px 1px 10px white;">Adoption Curve 1yr Ago</span></h2>
+<div style="font-size: 10px; float:right">
+From <a href="https://dashboards.mnm.social/d/000000012/user-growth?panelId=1&fullscreen&orgId=1&from=1492093949517&to=1524413261931">mnm.social</a>
+</div>
+</section>
+<section id="align-the-protocols" class="slide level2">
+<h2>Align the protocols</h2>
+<ul>
+<li>Delay the WG 6 months</li>
+<li>Mastodon switched to ActivityPub (for server-to-server)</li>
+</ul>
+</section>
+<section id="other-adoption" class="slide level2">
+<h2>Other adoption</h2>
+<p>Now or soon:</p>
+<p>GNU Social, pump.io, Pleroma, Peer Tube, FunkWhale, Nextcloud, Friendica, Socialhome, ...</p>
+</section>
+<section id="ongoing-adoption" class="slide level2" data-background-image="mastodon-growth-2018.png">
+<h2><span style="text-shadow: 1px 1px 10px white;">Ongoing adoption</span></h2>
+</section>
+<section id="how" class="slide level2">
+<h2>How?</h2>
+<div style="font-size: 70%">
+<ul>
+<li>2500 Instances (Servers)
+<ul>
+<li>Whole communities signed up at once, on an instance</li>
+<li>Local moderation rules</li>
+<li>Home for folks not comfortable (or allowed) on Twitter</li>
+<li>Independently run (or commercially)</li>
+<li>Try <a href="https://w3c.social" class="uri">https://w3c.social</a></li>
+</ul></li>
+<li>Top-notch open-source development lead (Eugen Rochko)
+<ul>
+<li>Patreon for some expenses</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="gap-to-mainstream" class="slide level2">
+<h2>Gap to Mainstream</h2>
+<p>Some items one might want to provide:</p>
+<ul>
+<li>Full Search</li>
+<li>Recommended Users</li>
+<li>Algorithmic Feed</li>
+<li>Advertising</li>
+<li>Groups/Lists</li>
+<li>Some kinds of website embedding</li>
+</ul>
+<p>Or not?</p>
+</section>
+<section id="part-4-innovation-welcome" class="slide level2" data-background-image="lyon/1-light.jpg">
+<h2>Part 4: Innovation Welcome</h2>
+</section>
+<section id="privacy" class="slide level2">
+<h2>Privacy</h2>
+<p>TOR onion routing reportedly works</p>
+<p>an interesting start</p>
+</section>
+<section id="make-existing-websites-more-social" class="slide level2">
+<h2>Make existing websites more social</h2>
+<p>Activity feeds out (news to folks who care)</p>
+<p>Activity feeds in (aggregating news)</p>
+<p>Embedding of social actions (like &quot;Like&quot; button without a commericial 3rd party)</p>
+</section>
+<section id="games-with-social-features" class="slide level2">
+<h2>Games with social features</h2>
+<p>Like when Facebook was mostly games</p>
+</section>
+<section id="multi-platform-integration" class="slide level2">
+<h2>Multi-platform integration</h2>
+<p>Folks are so spread out today</p>
+<p>brid.gy is a start</p>
+<p>more connections needed</p>
+</section>
+<section id="land-rush" class="slide level2">
+<h2>Land Rush?</h2>
+<p>It's a good time for first-mover advantage</p>
+<p>Like early days on a platform, maybe</p>
+</section>
+<section id="monetization" class="slide level2">
+<h2>Monetization</h2>
+<p>Explore new forms of monetization</p>
+<ul>
+<li>Pay to follow is doable</li>
+<li>Disclosed native advertising?</li>
+</ul>
+</section>
+<section id="ui-innovation" class="slide level2">
+<h2>UI innovation</h2>
+<p>Modify one of the open-source UIs</p>
+<p>Or start from scractch</p>
+<p>(without needing to run servers or hold user data)</p>
+</section>
+<section id="handling-bad-behavior" class="slide level2">
+<h2>Handling bad behavior</h2>
+<p>Welcome to the modern Web</p>
+<p>But <em>community instances</em> may be a more scalable model</p>
+<p>(study this!)</p>
+</section>
+<section id="tunable-feeds" class="slide level2">
+<h2>Tunable feeds</h2>
+<p>Instead of a single opaque algorithmic feed</p>
+<p>let users make multiple <mark>configurable</mark> feeds</p>
+<p>and <mark>switch</mark> between them.</p>
+<p>Machine learning <em>under user control</em></p>
+</section>
+<section id="surfacing-more-credible-content" class="slide level2">
+<h2>Surfacing more credible content</h2>
+<p>Explore ways to signal increased/decreased credibility in your content and social graph</p>
+<p>See <a href="https://credweb.org" class="uri">https://credweb.org</a></p>
+</section>
+<section id="extensibility" class="slide level2">
+<h2>Extensibility</h2>
+<p>ActivityStreams/ActivityPub is JSON-LD (extensible as RDF)</p>
+<p>but Mastodon's db has a fixed schema</p>
+<p>and used a microblogging client-server protocol (not AP)</p>
+<p>Nudge the community?</p>
+</section>
+<section id="beyond-microblogging" class="slide level2">
+<h2>Beyond Microblogging</h2>
+<p>group chat, photo sharing, ride sharing, meeting scheduling, commerce, job search, ...</p>
+</section>
+<section id="identity-migration" class="slide level2">
+<h2>Identity Migration</h2>
+<p>Now you control your on-line identity, but ...</p>
+<p>what if you want to move it?</p>
+<p>or back it up?</p>
+<p>(many interesting issues)</p>
+</section>
+<section id="conclusion-1" class="slide level2" data-background-image="lyon/1-light.jpg">
+<h2>Conclusion</h2>
+<p>We have a thriving Social Web MVP. Let's build up from here.</p>
+<p>Consider joining <a href="https://www.w3.org/community/SocialCG/" class="uri">https://www.w3.org/community/SocialCG/</a></p>
+<p>Join the fediverse, eg at <a href="https://w3c.social" class="uri">https://w3c.social</a></p>
+</section>
+    </div>
+  </div>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1
-          <h1>h1</h1>
-          <p>text <mark>marked</mark></p>
-          <h2>h2</h2>
-          <div style="float:right">right</div>
-          <div style="float:left">left</div>
-        </section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <script src="./reveal.js-3.6.0/lib/js/head.min.js"></script>
+  <script src="./reveal.js-3.6.0/js/reveal.js"></script>
 
-		<script src="reveal.js-3.6.0/lib/js/head.min.js"></script>
-		<script src="reveal.js-3.6.0/js/reveal.js"></script>
+  <script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: './reveal.js-3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: './reveal.js-3.6.0/plugin/zoom-js/zoom.js', async: true },
+              { src: './reveal.js-3.6.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
 </html>
