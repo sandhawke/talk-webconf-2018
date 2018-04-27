@@ -300,6 +300,13 @@ Or start from scractch
 (without needing to run servers or hold user data)
 
 
+## Social Readers
+
+RSS Reader + Like/Comment + Access Control
+
+See [more](https://aaronparecki.com/2018/03/12/17/building-an-indieweb-reader) on [indieweb readers](https://www.godaddy.com/garage/an-indieweb-reader-my-new-home-on-the-internet/)
+
+and [IndieAuth for WordPress](https://aaronparecki.com/2018/03/12/17/building-an-indieweb-reader)
 
 
 ## Handling bad behavior
@@ -369,6 +376,14 @@ or back it up?
 
 We have a thriving Social Web MVP.  Let's build up from here.
 
+<div style="font-size: 70%">
+
 Consider joining <https://www.w3.org/community/SocialCG/>
 
 Join the fediverse, eg at <https://w3c.social>
+
+Read <https://www.w3.org/TR/social-web-protocols/>
+
+Slides at <http://hawke.org/2018/webconf>
+
+</div>
