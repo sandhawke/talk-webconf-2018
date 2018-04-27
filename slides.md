@@ -160,7 +160,7 @@ Community Group
     * Micropub - API for posting to your site
 * <mark>OpenSocial</mark> style
     * ActivityStreams - JSON-LD, Actors + vocab for "social"
-    * ActivityPub - vocab for managing streams
+    * ActivityPub - vocab/API for managing streams (s2s, c2s)
 * <mark>Solid</mark> style
     * Linked Data Notifications (LDN)
 
@@ -213,10 +213,12 @@ GNU Social, pump.io, Pleroma, Peer Tube, FunkWhale, Nextcloud, Friendica, Social
     * Try <https://w3c.social>
 * Top-notch open-source development lead (Eugen Rochko)
     * <mark>Community supported</mark> via Patreon and Liberapay
-
+* JSON-LD with standard @context, viable RDF middle ground
 </div>
 
 ## Gap to Mainstream
+
+<div style="font-size: 70%">
 
 Some items one might want to provide:
 
@@ -226,6 +228,10 @@ Some items one might want to provide:
 * Advertising
 * Groups/Lists
 * Some kinds of website embedding
+* Trending topics
+* Reliable Metrics
+
+</div>
 
 Or not?
 
