@@ -22,9 +22,17 @@ sandro@w3.org<br />
 
 ## Credits
 
+<div style="font-size: 70%">
+
 * I'm reporting on the work of many people
-* (I arrived relatively late)
-* some talk ideas: Chris Webber, Evan Prodromou
+    * I arrived relatively late
+* Added to this talk:
+    * <a href="https://dustycloud.org/">Chris Webber</a>
+    * <a href="https://github.com/evanp">Evan Prodromou</a>
+    * <a href="https://aaronparecki.com/">Aaron Parecki</a>
+    * <a href="https://rhiaro.co.uk/">Amy Guy</a>
+
+</div>
 
 ## Overview
 
@@ -41,6 +49,8 @@ sandro@w3.org<br />
 ## Part 1: Social Web?
 
 ## <span style="text-shadow: 1px 1px 10px white;">2008</span> {data-background-image="economist-2008.png"}
+
+## Social Software
 
 ## <span style="text-shadow: 1px 1px 10px white;">1981</span> {data-background-image="Platovterm1981.jpg"}
 
@@ -68,7 +78,7 @@ Even: wikipedia, github, easychair !
 
 ## Decentralized Social
 
-Rare!
+<mark>Rare!</mark>
 
 * SMTP email
 * IRC
@@ -79,19 +89,17 @@ plus many that never caught on
 
 ## Why?
 
-1. requires agreement
+<div style="font-size: 70%">
+
+1. requires <mark>consensus</mark>
     - from everyone building the software
     - for nearly every change
-
-## Why?
-
-2. only modest financial rewards
-
-## Why?
-
+2. only modest <mark>financial</mark> rewards
 3. bootstrapping is _very_ hard
     * value is other users
-    * each new user sees a ghost town
+    * each new user sees a <mark>ghost town</mark>
+
+</div>
 
 ## Still want it!
 
